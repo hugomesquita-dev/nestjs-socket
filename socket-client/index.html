@@ -8,13 +8,19 @@
 
 <body>
   <div>
-    <ul id="messages"></ul>
+    <label for="roomId">Room ID:</label>
+    <input type="text" id="roomId">
   </div>
-
   <div>
-    <input id="message" type="text" />
-    <button onclick="handleSubmitNewMessage()">Submit</button>
+    <label for="userId">Your User ID:</label>
+    <input type="text" id="userId">
   </div>
+  <div>
+    <textarea id="message" placeholder="Type your message"></textarea>
+  </div>
+  <button id="sendBtn">Send</button>
+  <div id="chatBox"></div>
+
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
