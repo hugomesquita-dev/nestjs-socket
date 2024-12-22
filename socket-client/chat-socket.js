@@ -13,8 +13,8 @@ sendBtn.addEventListener('click', () => {
   const message = messageInput.value;
 
   if (!socket && userId) {
-    socket = io("http://localhost:3000", {
-      query: { userId }
+    socket = io("https://zencrush.app/", {
+      query: { userId }, secure: true
     });
     
     socket.on('connect', () => {
